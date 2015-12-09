@@ -1,0 +1,132 @@
+{  
+   "menu":{  
+         "desserts":[  
+            {  
+               "img":"images/dessert-1.png",
+               "price":"10$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/dessert-2.png",
+               "price":"20$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/dessert-3.png",
+               "price":"30$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/dessert-4.png",
+               "price":"40$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/dessert-5.png",
+               "price":"50$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+         ],
+         "meats":[  
+            {  
+               "img":"images/meat-1.png",
+               "price":"11$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/meat-2.png",
+               "price":"21$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/meat-3.png",
+               "price":"31$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/meat-4.png",
+               "price":"41$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/meat-5.png",
+               "price":"51$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+         ],
+         "salads":[  
+            {  
+               "img":"images/salad-1.png",
+               "price":"12$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/salad-2.png",
+               "price":"22$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/salad-3.png",
+               "price":"32$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/salad-4.png",
+               "price":"34$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {  
+               "img":"images/salad-5.png",
+               "price":"35$",
+               "title":"Lorem ipsum dollar",
+               "desc":"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+         ]
+   },
+   "category":[  
+      {  
+         "img":"images/icon-1.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {  
+         "img":"images/icon-2.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {  
+         "img":"images/icon-3.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {  
+         "img":"images/icon-4.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {  
+         "img":"images/icon-5.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {  
+         "img":"images/icon-6.png",
+         "title":"Lorem ipsum dollar",
+         "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+   ]
+}

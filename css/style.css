@@ -1,0 +1,112 @@
+body{font-family:sans-serif;color:#fff;}
+.container{width:80%;margin:0 auto;text-align:center;}
+h1{font:italic bold 3em serif;}
+#content h1{margin-top:2em;}
+h6{font-size:1em;}
+h1, h6, p, .btn{margin-bottom:40px;}
+section h6{color:rgb(164,168,188);}
+form, form input{text-align:left;}
+section h1, .row .col-sm-4 h6, .modal-title, form{color:rgb(110,116,152);}
+p{color:rgb(164,168,188);}
+a{text-decoration:none;color:#fff;}
+.navbar-brand{font-family:serif;}
+.navbar-brand:focus{color:rgb(229,146,5);}
+.navbar-nav li a:hover, .navbar-nav li a:focus{color:#fff;outline:none;background-color:transparent;}
+.navbar-nav li a:focus .underline{visibility:visible;}
+.navbar-nav li #first_btn:hover .underline, .navbar-nav li #first_btn:focus .underline, .navbar-nav .active #first_btn .underline{width:52px;}
+.navbar-nav li #second_btn:hover .underline, .navbar-nav li #second_btn:focus .underline, .navbar-nav .active #second_btn .underline{width:105px;}
+.navbar-nav li #third_btn:hover .underline, .navbar-nav li #third_btn:focus .underline, .navbar-nav .active #third_btn .underline{width:61px;}
+.navbar-nav li #fouth_btn:hover .underline, .navbar-nav li #fouth_btn:focus .underline, .navbar-nav .active #fouth_btn .underline{width:87px;}
+.navbar-nav li a:hover .underline, .navbar-nav .active a .underline{visibility:visible;-o-transition:width .2s linear;-moz-transition:width .2s linear;-webkit-transition:width .2s linear;transition:width .2s linear;}
+#menu-btn{text-align:center;}
+#first #menu-btn .btn{max-width:40%;font-size:1em;padding:5px;margin-right:5px;}
+.underline{display:block;margin:0 auto;border:1px solid #fff;width:0;visibility:hidden;-o-transition:all .3s linear;-moz-transition:all .3s linear;-webkit-transition:all .3s linear;transition:all .3s linear;}
+.navbar .navbar-toggle .icon-bar{background-color:#fff;}
+.btn{font-size:1.2em;color:rgb(110,116,152);border:1px solid rgb(164,168,188);background-color:transparent;}
+section{padding:50px 0;}
+img{max-width:100%;height:auto;}
+#content .btn, #fouth #email_btn{color:#fff;border:1px solid #fff;}
+#first img{box-shadow:1px 1px 10px #333;cursor:pointer;-o-transition:all .20s linear;-moz-transition:all .20s linear;-webkit-transition:all .20s linear;transition:all .20s linear;}
+#first img:hover{transform:scale(1.05);box-shadow:4px 4px 12px #333;-o-transition:all .20s linear;-moz-transition:all .20s linear;-webkit-transition:all .20s linear;transition:all .20s linear;}
+#first .col-sm-2 img{max-width:100%;}
+#first .col-sm-4 img{width:250px;height:auto;}
+#third .col-sm-4 img{height:80px;}
+.modal-footer .btn{margin:0;}
+header{height:100vh;background:url(images/header.jpg) no-repeat center center;}
+nav{background-color:rgba(0,0,0,0.4);}
+nav ul li a{font-size:18px;}
+#second{background-color:rgb(229,146,5);margin:0;padding:0;}
+#second h1{color:#fff;margin-top:50px;}
+/**/.main-color{color:rgb(229,146,5);}
+.line{display:block;width:100%;border:1px solid rgb(229,146,5);}
+.left{float:left;}
+.right{float:right;}
+.shown{display:block;}
+#first .active, .btn:hover, #content .btn:hover,#content .btn:focus, #fouth .btn:hover,#fouth .btn:focus{color:#fff;border:1px solid rgb(229,146,5);background-color:rgb(229,146,5);-o-transition:all .20s linear;-moz-transition:all .20s linear;-webkit-transition:all .20s linear;transition:all .20s linear;}
+#fouth{padding:150px 0;background:url(images/footer.jpg) no-repeat top center;}
+#fouth h1{color:#fff;}
+footer{text-align:center;}
+#fouth input{display:block;width:100%;padding:10px;font-size:1em;text-align:center;color:#fff;margin:0 auto 40px;border:2px solid #fff;background-color:transparent;}
+#fouth input:hover, #fouth input:focus{background-color:rgba(0,0,0,0.4);-o-transition:all .20s linear;-moz-transition:all .20s linear;-webkit-transition:all .20s linear;transition:all .20s linear;}
+.glyphicon-time{color:#666;}
+label span{font-weight:normal;color:red;}
+.tooltip-arrow,
+input + .tooltip > .tooltip-inner{font-size:18px;}
+.navbar-brand{font-size:1.8em;}
+#gotop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 24px;
+    background: #bbb;
+    color: white;
+    cursor: pointer;
+    border-radius: 25%;
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -o-border-radius: 25%;
+     transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+#gotop:hover {
+    background: #666;
+}
+@media screen and (min-width:768px) and (max-width:979px){.navbar-nav li{margin-left:20px;}
+header{height:50vh;}
+#first .container .col-sm-2:first-child{margin-left:-50px;}
+#first .container .col-sm-2{margin-right:16px;}
+#first .container .col-sm-2:last-child{margin-right:0px;}
+#first .container .col-sm-2 img{max-width:150%;}
+#first .container .col-sm-2 button{font-size:1em;max-width:150%;overflow:hidden;}
+#first .container .col-sm-4{margin-left:10px;margin-right:-10px;}
+#second .row .col-sm-4 h1{margin:0;}
+}
+@media (min-width:980px){h1{font-size:4.5em;}
+h6{font-size:1.5em;}
+#second .row .col-sm-4 h1{font-size:3.5em;}
+.navbar-nav li{margin:0 30px;}
+}
+@media screen and (min-width:1000px) and (max-width:1180px){#first .container .col-sm-2 .btn{margin-top:40px;margin-left:-12px;}
+}
+@media screen and (min-width:1200px){.navbar-nav li{margin:0 35px;}
+#content h1{margin-top:0;}
+.navbar-header{float:left;text-align:center;width:100%;}
+.navbar-brand{float:none;display:block;padding:40px 0 50px 0;font-size:72px;-o-transition:font-size .3s linear;-moz-transition:font-size .3s linear;-webkit-transition:font-size .3s linear;transition:font-size .3s linear;}
+.navbar-brand:hover{color:rgb(229,146,5);font-size:80px;-o-transition:font-size .3s linear;-moz-transition:font-size .3s linear;-webkit-transition:font-size .3s linear;transition:font-size .3s linear;}
+.navbar-nav{margin-top:-50px;}
+.underline{margin:0;}
+#content{position:absolute;top:40%;left:10%;}
+.line{width:100px;margin-top:40px;}
+#first #menu-btn .btn{width:120px;font-size:1.2em;margin:0 20px 40px 20px;float:none;}
+#first .col-sm-2 img{margin:80px auto;}
+#second .row .col-sm-4 h1{font-size:4.5em;}
+#fouth input{width:60%;}
+footer{text-align:left;padding:50px 0 0 200px;}
+input{font-size:1.5em;}
+}

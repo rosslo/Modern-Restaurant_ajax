@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modern-Restaurant</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.preload.min.js"></script>
+	<script type="text/javascript">
+	 $.preload('../css/images/header.jpg','../images/section.jpg','../css/images/footer.jpg');
+	</script>
+</head>
+<body>
+	<header>		
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="main-color navbar-brand">Eudora</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a id="first_btn" href="#">MENU<span class="underline"></span></a></li>
+						<li><a id="second_btn" href="#">OUR STORY<span class="underline"></span></a></li>
+					</ul>	
+
+					<ul class="nav navbar-nav navbar-right">	
+						<li><a id="third_btn" href="#">OFFER<span class="underline"></span></a></li>
+						<li><a id="fouth_btn" href="#">CONTACT<span class="underline"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container" id="content">	
+			<h1>Eudora is <span class="main-color">simple</span> psd template</h1>
+			<h6>Lorem ipsum dolor sit amet, consectetr adipisicing elit, sed do<br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+			<button type="button" class="btn btn-default">LEARN MORE</button>
+		</div>
+	</header>
+	<section id="first">
+		<div class="container">			
+			<h1><span class="line left"></span>Lorem ipsum dolor sit amet<span class="line right"></span></h1>		
+			<h6>Lorem ipsum dolor sit amet, consectetr adipisicing elit, sed do eiusmod<br />tempor incididunt ut labore et dolore magna aliqua.</h6>
+		</div>
+		<div id="menu-btn">
+			<button type="button" class="btn" id="desserts_btn">DESSERTS</button>
+			<button type="button" class="btn active" id="meats_btn">MEATS</button>
+			<button type="button" class="btn" id="salads_btn">SALADS</button>
+		</div>
+		<div class="container">
+			<!--MEATS-->
+			<div class="row">
+				
+			</div>
+			<!--MEATS-->
+			 <!-- Order Modal -->
+			  <div class="modal fade" id="orderModal" role="dialog">
+			    <div class="modal-dialog">			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Order Form</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>Please complete the order form and submit your order.</p>
+			          <form role="form">
+			          <div class="form-group">
+						    <label for="name">Name:<span class="check"></span></label>
+						    <input type="name" class="form-control" id="name" required="required">
+						  </div>
+						 <div class="form-group">
+						    <label for="telephone">Telephone Number:<span class="check"></span></label>
+						    <input type="telephone" class="form-control" id="telephone" required="required">
+						  </div>
+						  <div class="form-group">
+						    <label for="email">Email address:<span class="check"></span></label>
+						    <input type="email" class="form-control" id="email" required="required">
+						  </div>
+						   <div class="form-group">
+						    <label for="adr">Delivery Address:<span class="check"></span></label>
+						    <input type="address" class="form-control" id="adr" required="required">
+						  </div>
+
+				        <div class="form-group">
+				        	<label for="date">Delievery Date:<span class="check"></span></label>
+			              	<div class='input-group date' id='datetimepicker1'>
+			                    <input type='text' class="form-control" id="date" required="required">
+			                    <span class="input-group-addon">
+			                        <span class="glyphicon glyphicon-calendar"></span>
+			                    </span>
+                			</div>
+			            </div>
+			            <div class="modal-footer">			
+						   <button type="submit" class="btn btn-default left">Submit</button>
+						   <!-- data-toggle="modal" data-target="#submit_modal" -->
+						   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						</form>
+			        </div>
+			      </div>	      
+			    </div>
+			  </div>
+			<!-- Order Modal -->
+			<!-- Submit Modal -->
+			<div class="modal fade" id="submit_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						    <h6 class="modal-title" id="subscribeModalLabel">Thank you for your order</h6>
+						</div>
+					<div class="modal-body">
+						  <p><b>Order number is：12345678</b><br /> You will receive an email confirmation shortly at info@eudora.com.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+					</div>
+				</div>
+				</div>
+			</div>				
+			<!-- Submit Modal -->
+		  </div>
+		</section>
+		<section id="second">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="container">
+						<h1>Check our breakfast offer</h1>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<img src="images/section.jpg" alt="check breakfast">
+				</div>
+			</div>
+		</section>
+		<section id="third">
+			<div class="container">
+				<h1><span class="line left"></span>Lorem ipsum dolor sit amet<span class="line right"></span></h1>
+				<h6>Lorem ipsum dolor sit amet, consectetr adipisicing elit, sed do eiusmod<br />tempor incididunt ut labore et dolore magna aliqua.</h6>
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="icon_img">
+						<h6 class="icon_title"></h6>
+						<div class="container">
+						<p class="icon_desc"></p>
+						<button type="button" class="btn" data-toggle="modal" data-target="#icon-1">LEARN MORE</button>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="icon-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title icon_title" id="myModalLabel"></h6>
+							      </div>
+							      <div class="modal-body">
+							      	  <div class="row">
+							      		<div class="col-md-5">
+							      			<img class="icon_img">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p class="icon_desc"></p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+					</div>
+					<div class="col-sm-4">
+						<img src="images/icon-2.png">
+						<h6>Lorem ipsum dollar</h6>
+						<div class="container">
+						<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+						<button type="button" class="btn" data-toggle="modal" data-target="#icon-2">LEARN MORE</button>
+						</div>
+												<!-- Modal -->
+						<div class="modal fade" id="icon-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title" id="myModalLabel">Lorem ipsum dollar</h6>
+							      </div>
+							      <div class="modal-body">
+							      	  <div class="row">
+							      		<div class="col-md-5">
+							      			<img src="images/icon-2.png">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+					</div>
+					<div class="col-sm-4">
+						<img src="images/icon-3.png">
+						<h6>Lorem ipsum dollar</h6>
+						<div class="container">
+						<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+						<button type="button" class="btn" data-toggle="modal" data-target="#icon-3">LEARN MORE</button>
+						</div>
+												<!-- Modal -->
+						<div class="modal fade" id="icon-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title" id="myModalLabel">Lorem ipsum dollar</h6>
+							      </div>
+							      <div class="modal-body">
+							      	  <div class="row">
+							      		<div class="col-md-5">
+							      			<img src="images/icon-3.png">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="images/icon-4.png">
+						<h6>Lorem ipsum dollar</h6>
+						<div class="container">		
+						<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+						<button type="button" class="btn" data-toggle="modal" data-target="#icon-4">LEARN MORE</button>
+					</div>
+											<!-- Modal -->
+						<div class="modal fade" id="icon-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title" id="myModalLabel">Lorem ipsum dollar</h6>
+							      </div>
+							      <div class="modal-body">
+							      	  <div class="row">
+							      		<div class="col-md-5">
+							      			<img src="images/icon-4.png">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+				</div>
+							<div class="col-sm-4">
+								<img src="images/icon-5.png">
+								<h6>Lorem ipsum dollar</h6>
+								<div class="container">	
+									<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+									<button type="button" class="btn" data-toggle="modal" data-target="#icon-5">LEARN MORE</button>
+								</div>
+														<!-- Modal -->
+						<div class="modal fade" id="icon-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title" id="myModalLabel">Lorem ipsum dollar</h6>
+							      </div>
+							      <div class="modal-body">
+							      	  <div class="row">
+							      		<div class="col-md-5">
+							      			<img src="images/icon-5.png">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+							</div>
+							<div class="col-sm-4">
+								<img src="images/icon-6.png">
+								<h6>Lorem ipsum dollar</h6>
+								<div class="container">	
+									<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+									<button type="button" class="btn" data-toggle="modal" data-target="#icon-6">LEARN MORE</button>
+								</div>
+														<!-- Modal -->
+						<div class="modal fade" id="icon-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h6 class="modal-title" id="myModalLabel">Lorem ipsum dollar</h6>
+							      </div>
+							      <div class="modal-body">
+							      	<div class="row">
+							      		<div class="col-md-5">
+							      			<img src="images/icon-6.png">
+							      		</div>
+							      		<div class="col-md-7">
+							      			<p>Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor indididunt ut labore et dolore magna.</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="modal-footer">
+					        <button type="button" class="btn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="fouth">
+					<div class="container">
+						<h1>Subscribe our newsletter</h1>
+							<input type="email" placeholder="WRITE YOUR E-MAIL ADDRES" title="Please fill your email." />
+							<button type="button" class="btn" id="email_btn">SEND E-MAIL</button>
+						<div class="modal fade" id="subscribe_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h6 class="modal-title" id="subscribeModalLabel">Success! You're now subscribed.</h6>
+						      </div>
+						      <div class="modal-body">
+						        <p>You've been successfully subscibed!<br /> Check your inbox soon for great emails from this sender.</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>						
+					</div>
+				</section>
+<footer>
+	<p>&copy Copyright 2015 by Eudora. All rights reserved</p>
+</footer>
+<div id="gotop"><i class="fa fa-chevron-up"></i></div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.ajax({
+			url: "JSON.json",
+			type: "GET",
+			dataType: "json",
+			cache: false,
+			success: function(respone){
+				for(var i=0; i<respone.menu.meats.length; i++){
+					var data=respone.menu.meats[i];
+					createBox(i);
+					insert(i,data);							
+				}
+				$('#salads_btn, #desserts_btn, #meats_btn').click(function(){
+					var btnId = $(this).attr('id');
+					var kind = btnId.replace('_btn', '');
+					var data = respone.menu[kind];
+					for(var i=0; i<data.length; i++){
+						insert(i,data[i]);					
+					}					
+				});
+
+				//for(var i=0; i<respone.category.length; i++){}
+				$('.icon_img').attr('src',respone.category[0]["img"]);
+				$('.icon_title').html(respone.category[0]["title"]);
+				$('.icon_desc').html(respone.category[0]["desc"]);
+												
+				
+			},
+			error: function(xhr){
+				alert("error");
+			},
+			complete: function(){}
+	});
+	function createBox(i){
+		if(i!=2){
+			$("<div class='col-sm-2'><img class='menu_img' href='#'></div>").appendTo('#first .container:eq(1) .row');
+			$('.menu_img:eq(' + i + ")").after("<button type='button' class='btn'></button>");
+			$('.menu_img:eq(' + i + ")").after("<div class='hidden'><h1 class='main-color menu_price'></h1></div>");		
+		}
+		else{
+			$("<div class='col-sm-4'><img class='menu_img' href='#'></div>").appendTo('#first .container:eq(1) .row');
+			$('.menu_img:eq(' + i + ")").after("<div class='shown'></div>");
+			$("<h1 class='main-color menu_price'></h1>").appendTo('#first .container:eq(1) .row .shown');
+			$('.shown').after("<button type='button' class='btn'></button>");
+		}
+		$('.menu_price:eq(' + i + ")").after("<h6 class='menu_title'></h6>");
+		$('.menu_title:eq(' + i + ")").after("<p class='menu_desc'></p>");
+		$('#first .col-sm-2 .btn').text('LEARN MORE');
+		$('#first .col-sm-4 .btn').text('ORDER NOW');
+	}	
+	function insert(i,kind){
+		$('#first .container:eq(1) .row .menu_img:eq(' + i + ")").attr('src',kind["img"]);
+		$('#first .container:eq(1) .row .menu_price:eq(' + i + ")").html(kind["price"]);
+		$('#first .container:eq(1) .row .menu_title:eq(' + i + ")").html(kind["title"]);
+		$('#first .container:eq(1) .row .menu_desc:eq(' + i + ")").html(kind["desc"]);	
+	}
+});
+</script>
+</body>
+</html>
