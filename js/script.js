@@ -47,8 +47,6 @@ $(document).ready(function(){
 		else{}	
 			return false;
 	});
-
-
 	$('#menu-btn button').click(function(){
 		changeActive($(this));
 		return false;
@@ -56,10 +54,7 @@ $(document).ready(function(){
 	function changeActive(btn){
 		$('#menu-btn .active').removeClass('active');
 		btn.addClass('active');
-		$('.show').fadeOut("slow",function(){
-			$(this).removeClass('show').addClass('hide');
-		});
-		transformId(btn).fadeTo(1000,1).removeClass('hide').addClass('show');				
+		$('#first .row').css('opacity',0).fadeTo(1000,1);			
 	}
 	/*, #first .row img'*/
 	$('#first .row').on('click','.col-sm-2 button, .col-sm-2 img', function(){

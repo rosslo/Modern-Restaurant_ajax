@@ -1,0 +1,101 @@
+/*TRANSFORM JSON*/
+{
+  "menu":
+  [{
+   "dessert": [
+      {
+      "img": "images/dessert-1.png",
+      "price": 30,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+      "img": "images/dessert-2.png",
+      "price": 40,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+      "img": "images/dessert-3.png",
+      "price": 50,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]},
+  	{
+    "meats": [
+       {
+      "img": "images/dessert-1.png",
+      "price": 31,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+      "img": "images/dessert-1.png",
+      "price": 41,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+      "img": "images/dessert-1.png",
+      "price": 51,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]},
+    {
+  	"salads": [
+      {
+      "img": "images/dessert-1.png",
+      "price": 30,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+      "img": "images/dessert-1.png",
+      "price": 40,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {"kind": "desserts",
+      "img": "images/dessert-1.png",
+      "price": 50,
+      "title": "Lorem ipsum dollar",
+      "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  }],
+"category":
+  [
+    {
+    "img": "images/icon-1.png",
+    "title": "Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "img": "images/icon-2.png",
+    "title": "Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "img": "images/icon-3.png",
+    "title":"Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "img": "images/icon-4.png",
+    "title":"Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "img": "images/icon-5.png",
+    "title": "Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "img": "images/icon-6.png",
+    "title": "Lorem ipsum dollar",
+    "desc": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}
