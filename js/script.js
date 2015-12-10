@@ -54,7 +54,7 @@ $(document).ready(function(){
 	function changeActive(btn){
 		$('#menu-btn .active').removeClass('active');
 		btn.addClass('active');
-		$('#first .row').css('opacity',0).fadeTo(1000,1);			
+		$('#first .row').css('opacity',0).fadeTo(800,1);			
 	}
 	/*, #first .row img'*/
 	$('#first .row').on('click','.col-sm-2 button, .col-sm-2 img', function(){

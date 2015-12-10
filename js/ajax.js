@@ -3,7 +3,6 @@ $(document).ready(function(){
 			url: "JSON.json",
 			type: "GET",
 			dataType: "json",
-			cache: false,
 			success: function(respone){
 				for(var i=0; i<respone.menu.meats.length; i++){
 					var data=respone.menu.meats[i];
