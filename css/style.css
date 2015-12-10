@@ -30,7 +30,6 @@ img{max-width:100%;height:auto;}
 #first img:hover{transform:scale(1.05);box-shadow:4px 4px 12px #333;-o-transition:all .20s linear;-moz-transition:all .20s linear;-webkit-transition:all .20s linear;transition:all .20s linear;}
 #first .col-sm-2 img{max-width:100%;}
 #first .col-sm-4 img{width:250px;height:auto;}
-#third img{height:80px;}
 .modal-footer .btn{margin:0;}
 #third .modal-footer{margin-top: 0;}
 header{height:100vh;background:url(images/header.jpg) no-repeat center center;}
@@ -110,4 +109,10 @@ h6{font-size:1.5em;}
 #fouth input{width:60%;}
 footer{text-align:left;padding:50px 0 0 200px;}
 input{font-size:1.5em;}
+}
+#third .img{
+    background: url(images/result.png);
+    margin: 0 auto;
+    width: 80px;
+    height: 75px;
 }

@@ -99,32 +99,32 @@
    },
    "category":[  
       {  
-         "img":"images/icon-1.png",
+         "img":"background-position: 0px 0px;width: 87px; height: 70px",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {  
-         "img":"images/icon-2.png",
+         "img":"background-position: 0px -80px;",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {  
-         "img":"images/icon-3.png",
+         "img":"background-position: 0px -160px;",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {  
-         "img":"images/icon-4.png",
+         "img":"background-position: 0px -243px;",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {  
-         "img":"images/icon-5.png",
+         "img":"background-position: 0px -325px;",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {  
-         "img":"images/icon-6.png",
+         "img":"background-position: 0px -403px;",
          "title":"Lorem ipsum dollar",
          "desc":"Lorem ipsum dolor sit amer, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
