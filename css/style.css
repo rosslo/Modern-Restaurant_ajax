@@ -1,4 +1,4 @@
-body{font-family:sans-serif;color:#fff;}
+body{font-family:sans-serif;color:#fff;overflow: hidden;}
 .container{width:80%;margin:0 auto;text-align:center;}
 h1{font:italic bold 3em serif;}
 #content h1{margin-top:2em;}
