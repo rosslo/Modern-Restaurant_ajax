@@ -1,4 +1,4 @@
-body{font-family:sans-serif;color:#fff;overflow: hidden;}
+body{font-family:sans-serif;color:#fff;}
 .container{width:80%;margin:0 auto;text-align:center;}
 h1{font:italic bold 3em serif;}
 #content h1{margin-top:2em;}
@@ -115,4 +115,35 @@ input{font-size:1.5em;}
     margin: 0 auto;
     width: 80px;
     height: 75px;
+}
+.visible-xs .carousel-inner .item.active{
+    background-color: #fff !important;
+    border: none !important;
+}
+.visible-xs .img-box{
+    margin: 0 auto;
+    width: 205px;
+    height: 205px;
+    overflow: hidden;
+    border: 1px solid rgb(229,146,5);
+}
+.visible-xs img{
+    width: 100%;
+    height: auto;
+}
+.carousel-indicators{
+    bottom: -40px;
+}
+.carousel-indicators li{
+    margin: 0 5px;
+    background-color: #ccc;
+    border-color: #ccc;
+    z-index: 99;
+}
+.carousel-indicators li:hover, .carousel-indicators li.active{
+    background-color: rgb(229,146,5);
+    border-color: rgb(229,146,5);
+}
+.caption .menu_price, .caption .menu_title, .caption .menu_desc{
+    margin-bottom: 10px;
 }

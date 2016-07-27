@@ -7,15 +7,17 @@ $(document).ready(function(){
 				for(var i=0; i<respone.menu.meats.length; i++){
 					var data=respone.menu.meats[i];
 					createBox(i);
-					insert(i,data);							
+
+					createSlider(i);
+					insert(i,data);
 				}
 				$('#salads_btn, #desserts_btn, #meats_btn').click(function(){
 					var btnId = $(this).attr('id');
 					var kind = btnId.replace('_btn', '');
 					var data = respone.menu[kind];
 					for(var i=0; i<data.length; i++){
-						insert(i,data[i]);					
-					}					
+						insert(i,data[i]);
+					}
 				});
 				for(var i=0; i<respone.category.length; i++){
 					createBox2(i);
@@ -24,7 +26,7 @@ $(document).ready(function(){
 					$('.icon_img:eq(' + i + ")").attr('style',respone.category[i]["img"]);
 					$('.icon_title:eq(' + i + ")").html(respone.category[i]["title"]);
 					$('.icon_desc:eq(' + i + ")").html(respone.category[i]["desc"]);
-				}		
+				}
 			},
 			error: function(xhr){
 				alert("error");
@@ -51,24 +53,41 @@ $(document).ready(function(){
 	function createBox(i){
 		if(i!=2){
 			$("<div class='col-sm-2'><img class='menu_img' href='#'></div>").appendTo('#first .container:eq(1) .row');
-			$('.menu_img:eq(' + i + ")").after("<button type='button' class='btn'></button>");
-			$('.menu_img:eq(' + i + ")").after("<div class='hidden'><h1 class='main-color menu_price'></h1></div>");		
+			$('.hidden-xs .menu_img:eq(' + i + ")").after("<button type='button' class='btn'></button>");
+			$('.hidden-xs .menu_img:eq(' + i + ")").after("<div class='hidden'><h1 class='main-color menu_price'></h1></div>");
 		}
 		else{
 			$("<div class='col-sm-4'><img class='menu_img' href='#'></div>").appendTo('#first .container:eq(1) .row');
-			$('.menu_img:eq(' + i + ")").after("<div class='shown'></div>");
+			$('.hidden-xs .menu_img:eq(' + i + ")").after("<div class='shown'></div>");
 			$("<h1 class='main-color menu_price'></h1>").appendTo('#first .container:eq(1) .row .shown');
-			$('.shown').after("<button type='button' class='btn'></button>");
+			$('.shown').after("<button type='button' class='order_btn btn'></button>");
 		}
-		$('.menu_price:eq(' + i + ")").after("<h6 class='menu_title'></h6>");
-		$('.menu_title:eq(' + i + ")").after("<p class='menu_desc'></p>");
+		$('.hidden-xs .menu_price:eq(' + i + ")").after("<h6 class='menu_title'></h6>");
+		$('.hidden-xs .menu_title:eq(' + i + ")").after("<p class='menu_desc'></p>");
 		$('#first .col-sm-2 .btn').text('LEARN MORE');
 		$('#first .col-sm-4 .btn').text('ORDER NOW');
-	}	
+	}
 	function insert(i,kind){
 		$('#first .container:eq(1) .row .menu_img:eq(' + i + ")").attr('src',kind["img"]);
 		$('#first .container:eq(1) .row .menu_price:eq(' + i + ")").html(kind["price"]);
 		$('#first .container:eq(1) .row .menu_title:eq(' + i + ")").html(kind["title"]);
-		$('#first .container:eq(1) .row .menu_desc:eq(' + i + ")").html(kind["desc"]);	
+		$('#first .container:eq(1) .row .menu_desc:eq(' + i + ")").html(kind["desc"]);
+		$('#first .visible-xs .menu_img:eq(' + i + ")").attr('src',kind["img"]);
+		$('#first .visible-xs .menu_price:eq(' + i + ")").html(kind["price"]);
+		$('#first .visible-xs .menu_title:eq(' + i + ")").html(kind["title"]);
+		$('#first .visible-xs .menu_desc:eq(' + i + ")").html(kind["desc"]);
+	}
+	function createSlider(i){
+		if(i===0){
+			$('.visible-xs .carousel-indicators').append("<li data-target='#carousel-example-generic' data-slide-to="+i+" class='active'></li>");
+			$('.visible-xs .carousel-inner').append("<div class='item active'><div class='img-box'><img class='menu_img' href='#'></div></div>");
+		}else{
+			$('.visible-xs .carousel-indicators').append("<li data-target='#carousel-example-generic' data-slide-to="+i+"></li>");
+			$('.visible-xs .carousel-inner').append("<div class='item'><div class='img-box'><img class='menu_img' href='#'></div></div>");
+		}
+		$('.visible-xs .img-box:eq(' + i + ")").after("<div class='caption'></div>");
+		$('#first .container:eq(1) .caption:eq(' + i + ")").append("<h1 class='main-color menu_price'></h1>");
+		$('.visible-xs .menu_price:eq(' + i + ")").after("<h6 class='menu_title'></h6>");
+		$('.visible-xs .menu_title:eq(' + i + ")").after("<p class='menu_desc'></p>");
 	}
 });
