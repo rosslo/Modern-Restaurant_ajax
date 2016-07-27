@@ -116,6 +116,9 @@ input{font-size:1.5em;}
     width: 80px;
     height: 75px;
 }
+.visible-xs .carousel{
+    height: 400px;
+}
 .visible-xs .carousel-inner .item.active{
     background-color: #fff !important;
     border: none !important;
@@ -127,12 +130,18 @@ input{font-size:1.5em;}
     overflow: hidden;
     border: 1px solid rgb(229,146,5);
 }
+.carousel-control{
+    width: 205px;
+    height: 205px;
+    background-image: none !important;
+}
 .visible-xs img{
     width: 100%;
     height: auto;
 }
 .carousel-indicators{
-    bottom: -40px;
+    bottom: -20px;
+    z-index: 999;
 }
 .carousel-indicators li{
     margin: 0 5px;
@@ -145,5 +154,9 @@ input{font-size:1.5em;}
     border-color: rgb(229,146,5);
 }
 .caption .menu_price, .caption .menu_title, .caption .menu_desc{
+    width: 100%;
     margin-bottom: 10px;
+}
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+    color: rgb(229,146,5);
 }

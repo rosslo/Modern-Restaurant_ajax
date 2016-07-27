@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(function () {
 		$('#datetimepicker1').datetimepicker();
 	});
-	$("ul.navbar-nav li").on('click',function(){
+	$("ul.navbar-nav li").on('click touchend',function(){
 		slideTo($(this).children('a'));
 		$("ul.navbar-nav .active").removeClass('active');
 		$(this).parent().addClass('active');
