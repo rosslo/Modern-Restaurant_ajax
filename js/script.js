@@ -2,6 +2,12 @@ $(document).ready(function(){
 	$('.carousel').carousel({
 		interval: 2000
 	});
+	$("#carousel-example-generic").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#carousel-example-generic").swipeleft(function() {
+      $(this).carousel('next');
+   });
 	$(function () {
 		$('#datetimepicker1').datetimepicker();
 	});
