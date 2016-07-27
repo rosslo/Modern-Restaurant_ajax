@@ -2,12 +2,17 @@ $(document).ready(function(){
 	$('.carousel').carousel({
 		interval: 2000
 	});
-	$('#carousel-example-generic').hammer().on('swipeleft', function(){
-	  	$(this).carousel('next');
-	  });
-	  $('#carousel-example-generic').hammer().on('swiperight', function(){
-	  	$(this).carousel('prev');
-	  });
+	 var myElement = document.getElementById('carousel-example-generic');
+	 // create a simple instance
+	 // by default, it only adds horizontal recognizers
+	 var mc = new Hammer(myElement);
+	 // listen to events...
+	 mc.on("swipeleft", function(ev) {
+	 $('#carousel-example-generic').carousel('next');
+	 });
+	 mc.on("swiperight", function(ev) {
+	 $('#carousel-example-generic').carousel('prev');
+	 });
 	$(function () {
 		$('#datetimepicker1').datetimepicker();
 	});
