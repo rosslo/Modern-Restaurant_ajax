@@ -2,12 +2,13 @@ $(document).ready(function(){
 	$('.carousel').carousel({
 		interval: 2000
 	});
-	$("#carousel-example-generic").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#carousel-example-generic").swipeleft(function() {
-      $(this).carousel('next');
-   });
+	$(".carousel").swipe({
+	  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+	    if (direction == 'left') $(this).carousel('next');
+	    if (direction == 'right') $(this).carousel('prev');
+	  },
+	  allowPageScroll:"vertical"
+	});
 	$(function () {
 		$('#datetimepicker1').datetimepicker();
 	});
